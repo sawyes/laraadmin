@@ -26,3 +26,33 @@ php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
 ```
 php artisan admin:install
 ```
+
+#### 扩展包
+
+```
+composer require -o nwidart/laravel-modules 
+composer require -o predis/predis
+composer require -o guzzlehttp/guzzle
+composer require -o phpoffice/phpspreadsheet
+composer require -o barryvdh/laravel-ide-helper --dev
+```
+
+#### 添加核心扩张模块
+
+新建目录`Modules`
+
+获取Core代码, 注意gitignore已经忽略Modules模块
+
+```
+cd Modules
+git clone git@github.com:sawyes/Core.git
+```
+
+测试核心扩展包是否安装成功, 能获取对应配置文件即可
+
+```
+php artisan tinker
+>>> config('core')
+```
+
+
