@@ -22,7 +22,7 @@ composer require encore/laravel-admin
 php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
 ```
 
-安装
+安装 admin, 迁移对应的表
 ```
 php artisan admin:install
 ```
