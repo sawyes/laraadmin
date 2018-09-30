@@ -37,6 +37,7 @@ app/Admin
 ├── bootstrap.php
 └── routes.php
 ```
+
 #### 扩展包
 
 ```
@@ -65,4 +66,9 @@ php artisan tinker
 >>> config('core')
 ```
 
+#### 登陆
+
+user: admin
+
+password: admin
 
